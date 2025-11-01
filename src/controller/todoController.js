@@ -14,7 +14,7 @@ export const createTodo = async (req, res) => {
 
     } catch (error) {
         return res.status(400).json({
-            success: true,
+            success: false,
             message: "Todo not Created"
         })
 
@@ -36,7 +36,7 @@ export const getAllTodo = async (req, res) => {
 
     } catch (error) {
         return res.status(400).json({
-            success: true,
+            success: false,
             message: "Todo not fetched properly"
         })
 
